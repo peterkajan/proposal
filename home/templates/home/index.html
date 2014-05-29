@@ -14,7 +14,7 @@
     <!-- Custom styles for this template -->
     <link href="{% static 'dist/css/grayscale.css' %}" rel="stylesheet">
 
-   <!-- Fonts -->
+    <!-- Fonts -->
     <link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link href='http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
@@ -24,85 +24,189 @@
   <body>
 
     <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
-        <div class="container">
-            <div class="navbar-header page-scroll">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
-                    <i class="fa fa-bars"></i>
-                </button>
-                <a class="navbar-brand" href="#page-top">
-                    <span class="light">Cooperation proposal</span>
-                </a>
-            </div>
-
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
-                <ul class="nav navbar-nav">
-                    <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
-                    <li class="hidden">
-                        <a href="#page-top"></a>
-                    </li>
-                    <li class="page-scroll">
-                        <a href="#team">Team</a>
-                    </li>
-                    <li class="page-scroll">
-                        <a href="#develop">Development process</a>
-                    </li>
-                    <li class="page-scroll">
-                        <a href="#tech">Technologies</a>
-                    </li>
-                </ul>
-            </div>
-            <!-- /.navbar-collapse -->
+      <div class="container">
+        <div class="navbar-header page-scroll">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
+            <i class="fa fa-bars"></i>
+          </button>
+          <a class="navbar-brand" href="#page-top"> <span class="light">Cooperation proposal</span> </a>
         </div>
-        <!-- /.container -->
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
+          <ul class="nav navbar-nav">
+            <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
+            <li class="hidden">
+              <a href="#page-top"></a>
+            </li>
+            <li class="page-scroll">
+              <a href="#team">Team</a>
+            </li>
+            <li class="page-scroll">
+              <a href="#develop">Development process</a>
+            </li>
+            <li class="page-scroll">
+              <a href="#tech">Technologies</a>
+            </li>
+          </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+      </div>
+      <!-- /.container -->
     </nav>
 
-    <section class="intro">
-        <div class="intro-body">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-8 col-md-offset-2">
-                        <h1 class="brand-heading">New web for pickatale.com</h1>
-                        <p class="intro-text">Peta tu nieco vymyslii :)</p>
-                        <div class="page-scroll">
-                            <a href="#team" class="btn btn-circle">
-                                <i class="fa fa-angle-double-down animated"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
+    <section id="page-top" class="intro">
+      <div class="intro-body">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+              <h1 class="brand-heading">New web for pickatale.com</h1>
+              <p class="intro-text">
+                Peta tu nieco vymyslii :)
+              </p>
+              <div class="page-scroll">
+                <a href="#team" class="btn btn-circle"> <i class="fa fa-angle-double-down animated"></i> </a>
+              </div>
             </div>
+          </div>
         </div>
+      </div>
     </section>
 
-    <section id="about" class="container content-section text-center">
-        <div class="row">
-            <div class="col-lg-8 col-lg-offset-2">
-                <h2>About Grayscale</h2>
-                <p>Grayscale is a premium quality, free Bootstrap 3 theme created by Start Bootstrap. It can be yours right now, all you need to do is download the template on the preview page. You can use this template for any purpose, personal or commercial.</p>
-                <p>This striking, black and white theme features stock photographs by <a href="http://gratisography.com/">Gratisography</a> along with a custom Google Map skin courtesy of <a href="http://snazzymaps.com/">Snazzy Maps</a>.</p>
-                <p>With this template, just the slightest splash of color can make a huge impact on the overall presentation and design.</p>
-            </div>
+    <section id="team" class="container content-section text-center team">
+      <div class="row">
+        <div class="col-lg-8 col-lg-offset-2 cell">
+          <h2>Team</h2>
+          <p>
+            Our company provides a deep expertise in the field of web applications development with an emphasis on attractive visual design and user-friendly interface. Our team consists of employees who possess excellent technical skills as well as team members that . Excellent technical skills of our developers a
+          </p>
         </div>
+        <div class="col-sm-6 col-md-4 cell">
+          <img src="{% static 'proposal/img/kubek.jpg' %}" />
+          <p>
+            Vojtech Kubek
+          </p>
+          <p>
+            Designer
+          </p>
+        </div>
+        <div class="col-sm-6 col-md-4 cell">
+          <img src="{% static 'proposal/img/kajan.jpg' %}" />
+          <p>
+            Peter Kajan
+          </p>
+          <p>
+            Technical lead
+          </p>
+        </div>
+        <div class="col-sm-6 col-md-4 cell">
+          <img src="{% static 'proposal/img/kociova.jpg' %}" />
+          <p>
+            Michaela Kočiová
+          </p>
+          <p>
+            UX/UI Analyst
+          </p>
+        </div>
+        <div class="col-sm-6 col-md-4 cell">
+          <img src="{% static 'proposal/img/uhercik.jpg' %}" />
+          <p>
+            Tomáš Uherčík
+          </p>
+          <p>
+            Web developer
+          </p>
+        </div>
+        <div class="col-sm-6 col-md-4 cell">
+          <img src="{% static 'proposal/img/kompanek.jpg' %}" />
+          <p>
+            Matej Kompánek
+          </p>
+          <p>
+            Web developer
+          </p>
+        </div>
+        <div class="col-sm-6 col-md-4 cell">
+          <img src="{% static 'proposal/img/palesova.jpg' %}" />
+          <p>
+            Petra Pálešová
+          </p>
+          <p>
+            Brand manager
+          </p>
+        </div>
+
+        <div class="page-scroll">
+          <a href="#develop" class="btn btn-circle"> <i class="fa fa-angle-double-down animated"></i> </a>
+        </div>
+      </div>
     </section>
 
-    <section id="download" class="content-section text-center">
-        <div class="download-section">
-            <div class="container">
-                <div class="col-lg-8 col-lg-offset-2">
-                    <h2>Download Grayscale</h2>
-                    <p>You can download Grayscale for free on the download page at Start Bootstrap. You can also get the source code directly from GitHub if you prefer. Additionally, Grayscale is the first Start Bootstrap theme to come with a LESS file for easy color customization!</p>
-                    <a href="http://startbootstrap.com/grayscale" class="btn btn-default btn-lg">Visit Download Page</a>
-                </div>
-            </div>
+    <section id="develop" class="content-section text-center">
+      <div class="download-section">
+        <div class="container">
+          <div class="col-lg-8 col-lg-offset-2">
+
+            <h2>Development process</h2>
+            <p>
+              We develop software by using an agile methodology Scrum, which is based on an iterative process. After each iteration desired features of the particular iteration are delivered with working software.
+            </p>
+            <img src="{% static 'proposal/img/ScrumCycle.png' %}"/>
+            <p>
+              A customer defines requirements at the beginning of each iteration. These requirements are analyzed, implemented and tested by our team. At the end of the iteration, the implemented features are presented to the customer who either approves them or suggests improvements.
+            </p>
+
+          </div>
+          <div class="col-sm-6">
+            <h3>Flexibility</h3>
+            <p>
+              requirements are predefined for short iterations so that after each iteration the software specifications can be modified according to actual client needs.
+            </p>
+          </div>
+          <div class="col-sm-6">
+            <h3>Customer involvement</h3>
+            <p>
+              requirements are predefined for short iterations so that after each iteration the software specifications can be modified according to actual client needs.
+            </p>
+          </div>
+
+          <div class="page-scroll">
+            <a href="#tech" class="btn btn-circle"> <i class="fa fa-angle-double-down animated"></i> </a>
+          </div>
         </div>
+
+      </div>
     </section>
 
-    
+    <section id="tech" class="content-section text-center">
+      <div>
+        <div class="container">
+          <div class="col-lg-8 col-lg-offset-2">
+            <h2>Technologies</h2>
+            <p>
+              We suggest the following technologies:
+            </p>
+          </div>
+          <div class="col-sm-4 col-sm-offset-2">
+            <img src="{% static 'proposal/img/django.png' %}" class="logo"/>
+            <p>
+              Web framework
+            </p>
+          </div>
+          <div class="col-sm-4">
+            <img src="{% static 'proposal/img/bootstrap.jpg' %}" class="logo"/>
+            <p>
+              Frontend framework for responsive design
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <script src="{% static 'dist/js/bootstrap.min.js' %}"></script>
     <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
     <script src="{% static 'dist/js/grayscale.js' %}"></script>
-		
+
   </body>
 </html>
